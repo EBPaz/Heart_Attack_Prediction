@@ -15,12 +15,15 @@ Import pandas as pd
 From pathlib import Path
 
 Machine Learning Models (various versions, not all used on the same notebook):
-KNearestNeighbors:  
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, classification_report
-from sklearn.preprocessing import StandardScaler
+KNearFull
+KNearestNeighbors
+NeuralNet
+RandomForest
+Logistic Regression
+NeuralNet
+KerasTuner
 
+Specific imports can be found at the beginning of each notebook related to the above machine learning model.
 
 # Analysis
 During pre-processing we eliminated the columns “Patient ID” and “BMI” as variables we did not deem important to the dataset. We then split our data into 2 different dataframes. One included all variables a person had control over and the other included all variables a person did not have control over.  
@@ -32,7 +35,7 @@ The data in each model test was then scaled and encoded. Some of the datasets we
 The full dataset was then taken to Tableau to visualize any unique characteristics and to look for trends in the variables.  
 
 # Summary
-After many machine learning trials with different models and hyperperameter adjustments our most accurate model was only _____. This came from a _________________ model. 
+After many machine learning trials with different models and hyperperameter adjustments, our most accurate model was only 66% for no risk of a heart attack predictions. This came from a random forest model run on the top 7 variables in the dataset. 
 
 The most consistent variable indicating a risk in heart attack was smoking. Other than that, none of the variables stood out as highly important compared to others. 
 
